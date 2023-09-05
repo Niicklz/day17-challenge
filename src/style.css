@@ -3,6 +3,9 @@
   --secondary-color:#373b69;
 
 }
+html {
+  min-height: 320px;
+}
 #app {
   width: 100%;
   min-height: 100vh;
