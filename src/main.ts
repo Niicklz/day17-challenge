@@ -1,3 +1,4 @@
+import { ACCESS_KEY } from "./ACCESS_KEY";
 import { movieEl, movieElProps } from "./movieTemplate";
 
 const movieContainer = document.getElementById("main")!;
@@ -15,7 +16,7 @@ const options = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ODA4YTgzM2NmZDUwYmZhOGYwM2Q1ZDk2MGU2ZGM2YyIsInN1YiI6IjY0MmM5YjMyOGRlMGFlMDBiNjU2ODJiMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ZEJpJ4-UIGMXKH5xMhcC49ojiyfCCTIA90HMZnVw1qw",
+      `Bearer ${ACCESS_KEY}`,
   },
 };
 
