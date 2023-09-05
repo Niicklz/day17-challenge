@@ -6,7 +6,7 @@ export interface movieElProps {
     
     }
     
-
+   
 
 
     function reduceText(text:string, maxLength:number) {
@@ -27,7 +27,7 @@ export const movieEl = ({overview,poster_path,title,vote_average}:movieElProps)=
     <figure><img src="https://image.tmdb.org/t/p/w1280${poster_path}" alt=""></figure>
     <div class="movie-info">
       <h2>${reduceText(title, 60)}</h2>
-      <h4 class="rating">${vote_average.toFixed(1)}</h4>
+      <h4 class="rating ${vote_average > 7?"good": vote_average > 5? "normal": "bad"}">${vote_average.toFixed(1)}</h4>
     </div>
   </article>`
 }

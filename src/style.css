@@ -108,6 +108,17 @@ figure img {
   margin-top: 1.5rem;
   padding: 0 1rem 1rem 1rem;
 }
+.normal  {
+  font-weight: bold;
+}
+.bad {
+  color: red;
+  font-weight: bold;
+}
+.good {
+  color: rgb(9, 224, 9);
+  font-weight: bold;
+}
 h4,h2 {
   margin: 0;
 
