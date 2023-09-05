@@ -1,4 +1,4 @@
-import { ACCESS_KEY } from "./ACCESS_KEY";
+
 import { movieEl, movieElProps } from "./movieTemplate";
 
 const movieContainer = document.getElementById("main")!;
@@ -16,7 +16,7 @@ const options = {
   headers: {
     accept: "application/json",
     Authorization:
-      `Bearer ${ACCESS_KEY}`,
+      `Bearer ${import.meta.env.VITE_ACCESS_KEY}`,
   },
 };
 
