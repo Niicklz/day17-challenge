@@ -16,7 +16,7 @@ const options = {
   headers: {
     accept: "application/json",
     Authorization:
-      `Bearer ${import.meta.env.VITE_ACCESS_KEY}`,
+      `Bearer ${import.meta.env.VITE_APP_ACCESS_KEY}`,
   },
 };
 
@@ -29,6 +29,8 @@ const getData = async (url: string) => {
 
 const showMovies = async (url: string) => {
   const movies = await getData(url);
+  console.log(movies);
+  
   movieContainer.innerHTML = "";
   searchBar.value = "";
 
