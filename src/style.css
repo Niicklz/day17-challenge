@@ -3,7 +3,7 @@
   --secondary-color:#373b69;
 
 }
-html {
+html, body, #app {
   min-height: 320px;
 }
 #app {
